@@ -6,6 +6,7 @@ import ShopAll from "./pages/shopAll/ShopAll"
 import Blog from "./pages/blog/Blog"
 import About from "./pages/about/About"
 import SingleItem from "./pages/single-item/SingleItem"
+import NotFound from "./pages/not-found/NotFound"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="shopAll/:id" element={<SingleItem />} />
         </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Fragment>
   )
